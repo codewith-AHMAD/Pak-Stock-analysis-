@@ -60,7 +60,7 @@ Additionally, the Direction Accuracy of the model was found to be 0.9905, indica
 These metrics suggest that the LSTM model performed exceptionally well in capturing the patterns in the historical stock market data and making accurate predictions.
 
 ## Setup and Installation
-git clone [https://github.com/your_username/your_repo_name.git](https://github.com/your_username/your_repo_name.git)
+git clone [[https://github.com/your_username/your_repo_name](https://github.com/codewith-AHMAD/Pak-Stock-analysis-).git]
 cd your_repo_name
 
 ## Install the required Python libraries:
