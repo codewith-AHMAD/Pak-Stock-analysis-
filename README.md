@@ -34,11 +34,6 @@ The core of this project is an LSTM neural network. LSTMs are a type of Recurren
 
 The model architecture used is as follows:
 
-model = Sequential()
-model.add(LSTM(units=50, return_sequences=True, input_shape=(X_train.shape[1], X_train.shape[2])))
-model.add(LSTM(units=50))
-model.add(Dense(1))
-
 LSTM(units=50, return_sequences=True, input_shape=(X_train.shape[1], X_train.shape[2])): This is the first LSTM layer with 50 memory units. return_sequences=True indicates that this layer will output a sequence of values for each input time step, which is necessary for the subsequent LSTM layer. The input_shape specifies the shape of the input data for each time step (number of look-back days, number of features).
 
 ### LSTM(units=50): 
@@ -52,13 +47,6 @@ The look_back parameter is a crucial concept in time series forecasting with mod
 In this project, the look_back period was set to 60
 
 This means that for each prediction, the LSTM model looks at the closing prices and potentially other features from the preceding 60 trading days to learn patterns and make an informed forecast for the subsequent day's closing price.
-
-#### The data was prepared using a sliding window approach based on this look_back value:
-X_list = []
-y_list = []
-for i in range(len(X) - look_back - 1):
-    X_list.append(X.iloc[i:(i+look_back)].values)
-    y_list.append(y.iloc[i+look_back])
 
 ## Results
 The trained LSTM model achieved the following performance metrics on the test set:
