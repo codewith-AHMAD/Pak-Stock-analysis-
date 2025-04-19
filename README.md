@@ -61,7 +61,7 @@ These metrics suggest that the LSTM model performed exceptionally well in captur
 
 ## Setup and Installation
 git clone [[https://github.com/your_username/your_repo_name](https://github.com/codewith-AHMAD/Pak-Stock-analysis-).git]
-cd your_repo_name
+cd Pak-Stock-analysis-
 
 ## Install the required Python libraries:
 pip install -r requirements.txt
